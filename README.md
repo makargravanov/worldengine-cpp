@@ -14,7 +14,7 @@ RU
 
 **_~~The current stable version is 0.19.0~~_**  
 
-_The current version is alpha 0.0.1
+_The current version is alpha 0.0.1_
 
 You can generate the data for your own world, including a number of images (heightmap, biomes, etc.).
 
