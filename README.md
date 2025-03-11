@@ -2,7 +2,7 @@ WorldEngine - a world generator
 # **Port of WorldEngine to C++**  
 =========================  
 
-US GB  
+US/EN  
 **This is not the original repo; this is a fork of [Mindwerks/worldengine](https://github.com/Mindwerks/worldengine).**  
 **In this repository, I'm trying to port Python WorldEngine to C++ for my game, because I want to achieve better performance.**  
 **In the future, it may be expanded into a free UE plugin, a DLL library, and a QT-based GUI app.**
