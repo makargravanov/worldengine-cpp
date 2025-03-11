@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\ru">
+      <UniqueIdentifier>{198012d7-6ba9-4e5d-84fd-46e9c1396a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\ru\jetlabs">
+      <UniqueIdentifier>{58738540-837e-4c1e-8572-6f80fa824d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\ru\jetlabs\platec">
+      <UniqueIdentifier>{2ec2f6b6-331e-4cc6-96d4-1dc66cb5f41d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="platec\bounds.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\geometry.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\heightmap.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\lithosphere.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\mass.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\movement.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\noise.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\plate.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\plate_functions.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\platecapi.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\rectangle.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\segment_creator.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\segment_data.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\segments.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\simplerandom.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\simplexnoise.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\sqrdmd.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\utils.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="platec\world_point.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\bounds.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\geometry.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\heightmap.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\lithosphere.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\mass.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\movement.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\noise.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\plate.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\plate_functions.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\platecapi.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\rectangle.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\segment_creator.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\segment_data.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\segments.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\simplerandom.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\simplexnoise.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\sqrdmd.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\utils.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+    <ClInclude Include="ru\jetlabs\platec\world_point.hpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="world-engine-cpp.cpp">
+      <Filter>Исходные файлы\ru\jetlabs</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\bounds.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\geometry.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\heightmap.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\lithosphere.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\mass.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\movement.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\noise.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\plate.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\plate_functions.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\platecapi.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\rectangle.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\segment_creator.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\segment_data.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\segments.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\simplerandom.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\simplexnoise.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\sqrdmd.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\utils.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+    <ClCompile Include="ru\jetlabs\platec\world_point.cpp">
+      <Filter>Исходные файлы\ru\jetlabs\platec</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
