@@ -3,6 +3,12 @@ WorldEngine - a world generator
 
 [![Build Status](https://travis-ci.org/Mindwerks/worldengine.svg?branch=master)](https://travis-ci.org/Mindwerks/worldengine) [![Build status](https://ci.appveyor.com/api/projects/status/io4ljim2ra83df23?svg=true)](https://ci.appveyor.com/project/ftomassetti/worldengine) [![Coverage Status](https://coveralls.io/repos/Mindwerks/worldengine/badge.svg?branch=master&service=github)](https://coveralls.io/github/Mindwerks/worldengine?branch=master) [![Code Health](https://landscape.io/github/Mindwerks/worldengine/master/landscape.png)](https://landscape.io/github/Mindwerks/worldengine/master) [![codecov.io Coverage Status](https://codecov.io/github/Mindwerks/worldengine/coverage.svg?branch=master)](https://codecov.io/github/Mindwerks/worldengine?branch=master) [![Coverage Status](https://coveralls.io/repos/Mindwerks/worldengine/badge.svg?branch=master&service=github)](https://coveralls.io/github/Mindwerks/worldengine?branch=master) [![Requirements Status](https://requires.io/github/Mindwerks/worldengine/requirements.svg?branch=master)](https://requires.io/github/Mindwerks/worldengine/requirements/?branch=master)
 
+# **Port of WorldEngine to C++**  
+
+**This is not the original repo; this is a fork of [Mindwerks/worldengine](https://github.com/Mindwerks/worldengine).**  
+**In this repository, I'm trying to port Python WorldEngine to C++ for my game, because I want to achieve better performance.**  
+**In the future, it may be reworked into a free UE plugin, a DLL library, and a QT-based GUI app.**
+
 _The current stable version is 0.19.0_
 
 You can generate the data for your own world, including a number of images (heightmap, biomes, etc.).
