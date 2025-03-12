@@ -19,7 +19,7 @@ public:
     Node* getNode(SQLocation* location) const {
         const int x = location->x();
         const int y = location->y();
-        if (x < 0 || x >= width || y >= height) {
+        if (x < 0 || x >= width || y < 0 || y >= height) {
             return nullptr;
         }
         const float movementCost = mapData[(y * width) + x];

@@ -2,19 +2,19 @@
 
 class SQLocation {
 private:
-    long coordX, coordY;
+    int coordX, coordY;
 
 public:
-    explicit SQLocation(const long x, const long y) {
+    explicit SQLocation(const int x, const int y) {
         coordX = x;
         coordY = y;
     }
 
-    long x() const {
+    int x() const {
         return coordX;
     }
 
-    long y() const {
+    int y() const {
         return coordY;
     }
 

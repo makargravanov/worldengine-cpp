@@ -63,12 +63,14 @@
     <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\AStar.h" />
     <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\Node.h" />
     <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\Path.h" />
+    <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\PathFinder.h" />
     <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\SQLocation.h" />
     <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\SQMapHandler.h" />
     <ClInclude Include="repo\src\ru\jetlabs\postprod\util\numpysurrogate\arrays.h" />
     <ClInclude Include="repo\src\ru\jetlabs\test\postprod\util\numpysurrogate\arrays_tests.h" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="repo\src\ru\jetlabs\test\framework\" />
     <Folder Include="repo\src\ru\jetlabs\test\postprod\util\astar\" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

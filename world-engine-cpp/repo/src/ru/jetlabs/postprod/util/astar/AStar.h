@@ -63,6 +63,7 @@ public:
         const float totalCost = n->getMovementCost();
         Node* parent = n->getParent();
         nodes.push_back(n);
+        
         while (true) {
             if (parent == nullptr) {
                 break;
@@ -70,6 +71,7 @@ public:
             nodes.push_back(parent);
             parent = parent->getParent();
         }
+      
         std::reverse(nodes.begin(), nodes.end());
         return new Path(nodes, totalCost);
     }
@@ -83,7 +85,7 @@ public:
         const std::vector<Node*> nodes = mapHandler->getAdjacentNodes(node, end);
 
         for (Node* n : nodes) {
-            if (n->getLocation() == end) {
+            if (*n->getLocation() == *end) {
                 return n;
             }
             else if (findIndexOfValueInVector(n->getLocationId(), closedLocationsIdVec) != -1) {
@@ -115,7 +117,6 @@ public:
         Node* nextNode = fNode;
 
         int counter = 0;
-
         while (nextNode != nullptr) {
             if (counter > 10000) {
                 break;
@@ -127,6 +128,7 @@ public:
             nextNode = getBestOpenNode();
             counter += 1;
         }
+
         return nullptr;
     }
     
