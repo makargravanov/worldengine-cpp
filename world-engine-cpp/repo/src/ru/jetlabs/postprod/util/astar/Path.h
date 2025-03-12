@@ -21,10 +21,10 @@
 class Path {
 private:
     std::vector<Node*> nodes;
-    long totalCost;
+    float totalCost;
 
 public:
-    explicit Path(const std::vector<Node*>& nodes, const long totalCost) {
+    explicit Path(const std::vector<Node*>& nodes, const float totalCost) {
         this->nodes = nodes;
         this->totalCost = totalCost;
     }
@@ -33,7 +33,7 @@ public:
         return this->nodes;
     }
 
-    long getTotalMovementCost() const {
+    float getTotalMovementCost() const {
         return this->totalCost;
     }
 

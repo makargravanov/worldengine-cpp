@@ -62,29 +62,4 @@ public:
         }
         return result;
     }
-
-
-    /*
-    * def get_adjacent_nodes(self, cur_node, destination):
-        result = []
-
-        cl = cur_node.location
-        dl = destination
-
-        n = self._handle_node(cl.x + 1, cl.y, cur_node, dl.x, dl.y)
-        if n:
-            result.append(n)
-        n = self._handle_node(cl.x - 1, cl.y, cur_node, dl.x, dl.y)
-        if n:
-            result.append(n)
-        n = self._handle_node(cl.x, cl.y + 1, cur_node, dl.x, dl.y)
-        if n:
-            result.append(n)
-        n = self._handle_node(cl.x, cl.y - 1, cur_node, dl.x, dl.y)
-        if n:
-            result.append(n)
-
-        return result
-
-     */
 };
