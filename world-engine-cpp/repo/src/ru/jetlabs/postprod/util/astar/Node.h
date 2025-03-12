@@ -6,7 +6,7 @@ private:
     SQLocation* location;
     float movementCost;
     Node* parent;
-    int score;
+    float score;
     int locationId;
 
 public:
@@ -30,7 +30,7 @@ public:
         return parent;
     }
 
-    int getScore() const {
+    float getScore() const {
         return score;
     }
 
@@ -50,7 +50,7 @@ public:
         this->parent = par;
     }
 
-    void setScore(const int sc) {
+    void setScore(const float sc) {
         this->score = sc;
     }
 

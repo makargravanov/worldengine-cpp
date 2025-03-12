@@ -18,6 +18,55 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="repo\src\ru\jetlabs\platec\bounds.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\geometry.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\heightmap.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\lithosphere.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\mass.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\movement.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\noise.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\plate.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\platecapi.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\plate_functions.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\rectangle.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\segments.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\segment_creator.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\segment_data.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\simplerandom.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\simplexnoise.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\sqrdmd.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\utils.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\platec\world_point.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\world-engine-cpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="repo\src\ru\jetlabs\platec\bounds.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\geometry.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\heightmap.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\lithosphere.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\mass.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\movement.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\noise.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\plate.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\platecapi.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\plate_functions.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\rectangle.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\segments.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\segment_creator.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\segment_data.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\simplerandom.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\simplexnoise.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\sqrdmd.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\utils.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\platec\world_point.hpp" />
+    <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\AStar.h" />
+    <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\Node.h" />
+    <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\Path.h" />
+    <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\SQLocation.h" />
+    <ClInclude Include="repo\src\ru\jetlabs\postprod\util\astar\SQMapHandler.h" />
+    <ClInclude Include="repo\src\ru\jetlabs\postprod\util\numpysurrogate\arrays.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,9 +175,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Folder Include="repo\src\" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
