@@ -1,5 +1,8 @@
 ﻿#pragma once
+
 #include "SQLocation.h"
+
+
 
 class Node {
 private:
@@ -16,6 +19,7 @@ public:
         this->parent = parent;
         this->score = 0;
         this->locationId = locationId;
+        AStarMemoryManager::add(this);
     }
 
     SQLocation* getLocation() const {
@@ -61,35 +65,5 @@ public:
     bool operator==(const Node& other) const {
         return other.getLocationId() == locationId;
     }
-
-    Node(const Node&) = delete;
-    Node& operator=(const Node&) = delete;
-
-    Node(Node&& other) noexcept :
-        location(other.location),
-        movementCost(other.movementCost),
-        parent(other.parent),
-        score(other.score),
-        locationId(other.locationId) {
-        other.location = nullptr;
-    }
-
-    Node& operator=(Node&& other) noexcept {
-        if (this != &other) {
-            delete location;
-
-            location = other.location;
-            movementCost = other.movementCost;
-            parent = other.parent;
-            score = other.score;
-            locationId = other.locationId;
-
-            other.location = nullptr;
-        }
-        return *this;
-    }
-
-    ~Node() {
-        delete(location);
-    }
+    
 };

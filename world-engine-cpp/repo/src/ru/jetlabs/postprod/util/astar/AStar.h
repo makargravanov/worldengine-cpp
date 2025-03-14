@@ -1,4 +1,6 @@
 ﻿#pragma once
+
+#include "AStarMemoryManager.h"
 #include "Path.h"
 #include "SQMapHandler.h"
 #include "../numpysurrogate/arrays.h"
@@ -15,34 +17,9 @@ public:
         openLocationIdVec = {};
         openNodes = {};
         closedLocationsIdVec = {};
+        AStarMemoryManager::add(this);
     }
-
-    AStar(const AStar&) = delete;
-    AStar& operator=(const AStar&) = delete;
-
-    AStar(AStar&& other) noexcept :
-        mapHandler(other.mapHandler),
-        openLocationIdVec(std::move(other.openLocationIdVec)),
-        openNodes(std::move(other.openNodes)),
-        closedLocationsIdVec(std::move(other.closedLocationsIdVec)) {
-        other.mapHandler = nullptr;
-    }
-
-    AStar& operator=(AStar&& other) noexcept {
-        if (this != &other) {
-            delete mapHandler;
-            for (const Node* node : openNodes) {
-                delete node;
-            }
-            openLocationIdVec = std::move(other.openLocationIdVec);
-            openNodes = std::move(other.openNodes);
-            closedLocationsIdVec = std::move(other.closedLocationsIdVec);
-
-            other.mapHandler = nullptr;
-        }
-        return *this;
-    }
-
+    
     Node* getBestOpenNode() const {
         Node* bestNode = nullptr;
         for (Node* n : openNodes) {
@@ -130,12 +107,5 @@ public:
         }
 
         return nullptr;
-    }
-    
-    ~AStar() {
-        delete mapHandler;
-        for (const Node* node : openNodes) {
-            delete node;
-        }
     }
 };

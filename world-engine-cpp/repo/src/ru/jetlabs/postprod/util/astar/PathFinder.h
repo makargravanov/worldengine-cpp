@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "AStar.h"
+#include "AStarMemoryManager.h"
 #include "Path.h"
 #include "../numpysurrogate/arrays.h"
 
@@ -9,8 +10,9 @@ public:
 
     static std::vector<std::pair<int,int>> find(const std::vector<std::vector<float>>& heightMap,
                                                 const std::pair<int,int>& source,
-                                                const std::pair<int,int>& destination) {
+                                                const std::pair<int,int>& destination) noexcept {
 
+        AStarMemoryManager* manager = AStarMemoryManager::init();
         const int sx = source.first;
         const int sy = source.second;
         const int dx = destination.first;
@@ -31,17 +33,13 @@ public:
 
         Path* p = pathfinder->findPath(start,end);
         if (p==nullptr) {
-            
+            delete manager;
             return path;
         }
         for (const Node* node : p->getNodes()) {
             path.emplace_back(node->getLocation()->x(), node->getLocation()->y());
         }
-        //delete pathfinder;
-        //delete start;
-        //delete end;
-        //delete p;
-        
+        delete manager;
         return path;
     }
 };

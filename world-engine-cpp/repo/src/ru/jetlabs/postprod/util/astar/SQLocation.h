@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+
 class SQLocation {
 private:
     int coordX, coordY;
@@ -8,6 +9,7 @@ public:
     explicit SQLocation(const int x, const int y) {
         coordX = x;
         coordY = y;
+        AStarMemoryManager::add(this);
     }
 
     int x() const {

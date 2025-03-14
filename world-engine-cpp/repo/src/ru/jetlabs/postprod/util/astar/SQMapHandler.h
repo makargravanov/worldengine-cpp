@@ -3,6 +3,7 @@
 
 #include "Node.h"
 
+
 class SQMapHandler {
 private:
     std::vector<float> mapData;
@@ -14,6 +15,7 @@ public:
         this->mapData = mapData;
         this->width = width;
         this->height = height;
+        AStarMemoryManager::add(this);
     }
 
     Node* getNode(SQLocation* location) const {

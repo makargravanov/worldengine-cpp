@@ -23,8 +23,8 @@ int main() {
     //runTestsFindIndexOfValueInVector();
 
 
-    std::vector<std::vector<float>> test_map(5000, std::vector<float>(5000, 0.0f));
-    std::vector<float> line(20, 1.0f);
+    std::vector<std::vector<float>> test_map(4000, std::vector<float>(4000, 0.0f));
+    std::vector<float> line(10000, 1.0f);
     test_map[10] = line;
     test_map[10][18] = 0.0f;
 
@@ -38,8 +38,8 @@ int main() {
     };
 
     
-    for (int i = 0; i < 1; ++i) {
-        std::vector<std::pair<int, int>> shortest_path = PathFinder::find(test_map, {0, 0}, {19, 19});
+    for (int i = 0; i < 30; ++i) {
+        std::vector<std::pair<int, int>> shortest_path = PathFinder::find(test_map, {0, 0}, {3999, 3999});
     }
     
     //cout << equal_paths(shortest_path, path_data) << "\n";

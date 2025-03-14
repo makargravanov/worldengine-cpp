@@ -38,6 +38,7 @@
     <ClCompile Include="repo\src\ru\jetlabs\platec\sqrdmd.cpp" />
     <ClCompile Include="repo\src\ru\jetlabs\platec\utils.cpp" />
     <ClCompile Include="repo\src\ru\jetlabs\platec\world_point.cpp" />
+    <ClCompile Include="repo\src\ru\jetlabs\postprod\util\astar\AStarMemoryManager.cpp" />
     <ClCompile Include="repo\src\ru\jetlabs\world-engine-cpp.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +73,9 @@
   <ItemGroup>
     <Folder Include="repo\src\ru\jetlabs\test\framework\" />
     <Folder Include="repo\src\ru\jetlabs\test\postprod\util\astar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="repo\src\ru\jetlabs\postprod\util\astar\AStarMemoryManager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
